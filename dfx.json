@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "mexicoproperty_backend": {
+      "main": "src/mexicoproperty_backend/main.mo",
+      "type": "motoko"
+    },
+    "mexicoproperty_frontend": {
+      "dependencies": [
+        "mexicoproperty_backend"
+      ],
+      "source": [
+        "src/mexicoproperty_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "mexicoproperty_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
